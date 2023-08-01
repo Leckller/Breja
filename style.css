@@ -136,7 +136,7 @@ main #breja {
 }
 
 main #breja2 {
-  width: 500px;
+  width: 600px;
   border-radius: 50px;
   box-shadow: 3px 3px 9px 9px black;
 }
@@ -149,8 +149,8 @@ main #breja2 {
   align-items: center;
   width: 25%;
   position: absolute;
-  margin-left: 13vw;
-  margin-top: 20vh;
+  margin-left: 12vw;
+  margin-top: 16vh;
 }
 
 .firstSec h3 {
@@ -165,22 +165,22 @@ main #breja2 {
   position: absolute;
   justify-content: center;
   align-items: center;
-  margin-top: 12vw;
-  margin-left: 46vw;
+  margin-top: 7vw;
+  margin-left: 49vw;
   width: 50%;
   text-align: end;
 }
 
 .secondSec .breja3 {
-  width: 500px;
+  width: 400px;
   border-radius: 50px;
   box-shadow: 3px 3px 9px 9px black;
 }
 
 .secondSec h3 {
-  padding-right: 15px;
+  padding-right: 30px;
   color: #222;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   filter: brightness(5) contrast(10);
 }
 
@@ -190,14 +190,14 @@ main #breja2 {
   align-items: center;
   justify-content: center;
   text-align: start;
-  margin-left: 5vw;
-  margin-top: 80vh;
+  margin-left: -4vw;
+  margin-top: 84vh;
   position: absolute;
   width: 50%;
 }
 
 .thirdSec .breja4 {
-  width: 500px;
+  width: 700px;
   border-radius: 50px;
   box-shadow: 3px 3px 9px 9px black;
 } 
@@ -215,9 +215,9 @@ main #breja2 {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  margin-top: 66vh;
+  margin-top: 70vh;
   width: 30%;
-  margin-left: 60vw;
+  margin-left: 54vw;
   position: absolute;
 }
 
@@ -229,7 +229,7 @@ main #breja2 {
 
 .fourthSec h3 {
   color: #222;
-  padding-top: 15 px;
+  padding-top: 30px;
   filter: brightness(5) contrast(10);
 }
 
@@ -298,4 +298,3 @@ main #breja2 {
     opacity: 1;
   }
 }
-
