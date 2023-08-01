@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -33,6 +33,7 @@ body {
   font-size: 2vw;
   text-decoration: none;
   font-weight: 600;
+  transition: .5s;
   text-shadow: 3px 9px 3px rgba(0, 0, 0, 0.24);
   color: sandybrown;
 }
@@ -41,6 +42,7 @@ body {
   position: absolute;
   text-decoration: none;
   font-size: 2vw;
+  transition: .5s;
   transform: translate(-50px, 35px);
   z-index: 0;
   font-weight: 600;
@@ -49,14 +51,14 @@ body {
 }
 
 #logo:hover .Cervejaria {
-  transition: .5s;
-  text-shadow: 3px 9px 3px rgba(244, 165, 96, 0.432);
+  transition: .8s;
+  text-shadow: 3px 9px 3px rgba(244, 165, 96, 0.185);
   filter: brightness(1.2);
 }
 
 #logo:hover .Nascimento {
-  transition: .5s;
-  text-shadow: 3px 9px 3px rgba(244, 165, 96, 0.432);
+  transition: .8s;
+  text-shadow: 3px 9px 3px rgba(244, 165, 96, 0.185);
   filter: brightness(1.2);
 }
 
@@ -71,8 +73,9 @@ body {
   font-weight: 500;
   text-decoration: none;
   margin: 0 20px;
-  text-shadow: 3px 9px 3px sandybrown;
-  animation: transUp 1.5s ease-in-out;
+  text-shadow: 3px 9px 3px rgba(244, 165, 96, 0.363);
+  transition: .5s;
+  animation: transUp 1.5s ease-in-out, 2s;
 }
 
 .navBar a:hover {
@@ -129,11 +132,13 @@ main {
 main #breja {
   width: 100vw;
   filter: blur(10px);
+  box-shadow: 3px 3px 9px 9px black;
 }
 
 main #breja2 {
   width: 500px;
   border-radius: 50px;
+  box-shadow: 3px 3px 9px 9px black;
 }
 
 .firstSec {
@@ -144,51 +149,153 @@ main #breja2 {
   align-items: center;
   width: 25%;
   position: absolute;
-  margin-left: 2vw;
-  margin-top: 8vw;
-}
-
-.firstSec:hover #breja2{
-  border: solid rgba(0, 0, 0, 0.425) 5px;
+  margin-left: 13vw;
+  margin-top: 20vh;
 }
 
 .firstSec h3 {
-  padding-top: 10px; 
+  padding-top: 15px; 
   color: #eaeaea;
+  filter: brightness(5) contrast(10);
+}
+
+.secondSec {
+  animation: transRight2 1.5s;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12vw;
+  margin-left: 46vw;
+  width: 50%;
+  text-align: end;
+}
+
+.secondSec .breja3 {
+  width: 500px;
+  border-radius: 50px;
+  box-shadow: 3px 3px 9px 9px black;
+}
+
+.secondSec h3 {
+  padding-right: 15px;
+  color: #222;
+  padding-bottom: 120px;
+  filter: brightness(5) contrast(10);
+}
+
+.thirdSec {
+  animation: transLeft 1.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  margin-left: 5vw;
+  margin-top: 80vh;
+  position: absolute;
+  width: 50%;
+}
+
+.thirdSec .breja4 {
+  width: 500px;
+  border-radius: 50px;
+  box-shadow: 3px 3px 9px 9px black;
+} 
+
+.thirdSec h3 {
+  color: #eaeaea;
+  padding-left: 15px;
+  filter: brightness(5) contrast(10);
+}
+
+.fourthSec {
+  animation: transDown 1.5s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 66vh;
+  width: 30%;
+  margin-left: 60vw;
+  position: absolute;
+}
+
+.fourthSec .breja5 {
+  width: 500px;
+  border-radius: 50px;
+  box-shadow: 3px 3px 9px 9px black;
+}
+
+.fourthSec h3 {
+  color: #222;
+  padding-top: 15 px;
+  filter: brightness(5) contrast(10);
 }
 
 @keyframes transLeft {
   0% {
-    transform: translateX(-400px) scale(.8);
+    transform: translateX(-400px) scale(.5);
+    opacity: 0;
   }
   100% {
     transform: scale(1);
+    opacity: 1;
   }
 }
 
 @keyframes transLeftLogo {
   0% {
     transform: translate(-400px, 0px) scale(.8);
+    opacity: 0;
   }
   100% {
     transform: translate(0px, -20px) scale(1);
+    opacity: 1;
   }
 }
 
 @keyframes transRight {
   0% {
-    transform: translate(400px, 0px);
+    transform: translate(100px, -100px) scale(0.5);
+    opacity: 0;
   }
   100% {
-    transform: translate(0px, 0px);
+    transform: translate(0px, 0px) scale(1) rotate(-45deg);
+    opacity: 1;
   }
 }
 
 @keyframes transUp {
   0% {
-    transform: translate(0px, -100px);
+    transform: translate(0px, -50px);
+    opacity: 0;
   }
   100% {
     transform: translate(0px, 0px);
+    opacity: 1;
   }
 }
+
+@keyframes transDown {
+  0% {
+    transform: translateY( 101vh);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes transRight2 {
+  from {
+    transform: translate(101%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
