@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Satisfy', cursive;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 30px 8vw;
+  background: #eaeaea1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+#logo {
+  transform: translate(0px, -20px);
+  animation: transLeftLogo 1.5s ease-in-out;
+}
+
+.Cervejaria {
+  font-size: 2vw;
+  text-decoration: none;
+  font-weight: 600;
+  text-shadow: 3px 9px 3px rgba(0, 0, 0, 0.24);
+  color: sandybrown;
+}
+
+.Nascimento {
+  position: absolute;
+  text-decoration: none;
+  font-size: 2vw;
+  transform: translate(-50px, 35px);
+  z-index: 0;
+  font-weight: 600;
+  text-shadow: 3px 9px 3px rgba(0, 0, 0, 0.24);
+  color: sandybrown;
+}
+
+#logo:hover .Cervejaria {
+  transition: .5s;
+  text-shadow: 3px 9px 3px rgba(244, 165, 96, 0.432);
+  filter: brightness(1.2);
+}
+
+#logo:hover .Nascimento {
+  transition: .5s;
+  text-shadow: 3px 9px 3px rgba(244, 165, 96, 0.432);
+  filter: brightness(1.2);
+}
+
+
+.navBar {
+  display: flex;
+}
+
+.navBar a {
+  color: sandybrown;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 20px;
+  text-shadow: 3px 9px 3px sandybrown;
+  animation: transUp 1.5s ease-in-out;
+}
+
+.navBar a:hover {
+  transition: .5s;
+  color: sandybrown;
+  text-shadow: 3px 9px 3px rgba(0, 0, 0, 0.24);
+  filter: brightness(1.2);
+}
+
+.socialMedia {
+  display: inline-flex;
+  flex-direction: row;
+  width: 150px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 6px 10px;
+  border: transparent solid 2px;
+  text-decoration: none;
+  transform: rotate(45deg);
+  transition: 1s;
+}
+
+.socialMedia a:hover {
+  border: sandybrown solid;
+}
+
+.socialMedia a i {
+  font-size: 20px;
+  color: sandybrown;
+  transform: rotate(-45deg);
+  text-shadow: 3px 9px 3px rgba(0, 0, 0, 0.24);
+  animation: transRight 1.5s ease-in-out;
+}
+
+.socialMedia a:hover i {
+  transition: 1s;
+  filter: brightness(1.5);
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+}
+
+main #breja {
+  width: 100vw;
+  filter: blur(10px);
+}
+
+main #breja2 {
+  width: 500px;
+  border-radius: 50px;
+}
+
+.firstSec {
+  animation: transLeft 1.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 25%;
+  position: absolute;
+  margin-left: 2vw;
+  margin-top: 8vw;
+}
+
+.firstSec:hover #breja2{
+  border: solid rgba(0, 0, 0, 0.425) 5px;
+}
+
+.firstSec h3 {
+  padding-top: 10px;
+  color: #eaeaea;
+}
+
+@keyframes transLeft {
+  0% {
+    transform: translateX(-400px) scale(.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes transLeftLogo {
+  0% {
+    transform: translate(-400px, 0px) scale(.8);
+  }
+  100% {
+    transform: translate(0px, -20px) scale(1);
+  }
+}
+
+@keyframes transRight {
+  0% {
+    transform: translate(400px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes transUp {
+  0% {
+    transform: translate(0px, -100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
