@@ -81,6 +81,7 @@ body {
 .navBar a:hover {
   transition: .5s;
   color: sandybrown;
+  font-size: 1.6vw;
   text-shadow: 3px 9px 3px rgba(0, 0, 0, 0.24);
   filter: brightness(1.2);
 }
